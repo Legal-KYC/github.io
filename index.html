@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal KYC™ - The UK's #1 Compliance Platform 5,000+ Professionals Trust</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        .pulse-slow {
+            animation: pulse-slow 3s ease-in-out infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                    Legal KYC™
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-blue-400 transition-colors">Features</a>
+                    <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
+                    <a href="#compliance" class="hover:text-blue-400 transition-colors">Compliance</a>
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-2 rounded-full hover:shadow-lg transition-all">
+                        Get Started
+                    </button>
+                </div>
+                <button class="md:hidden" id="menu-toggle">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+        <div class="absolute inset-0 gradient-bg opacity-20"></div>
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-20 float-animation"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 float-animation" style="animation-delay: 3s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    The UK's 5,000+ Leading Professionals
+                    <span class="block bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                        Never Worry About Compliance Again
+                    </span>
+                    (While Competitors Risk £25,000+ Fines)
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    <span class="text-yellow-400 font-bold">⚠️ URGENT:</span> While your competitors gamble with manual checks, top firms use our 90-second automated verification that creates bulletproof audit trails regulators can't reject. <span class="text-green-400">Join 5,000+ professionals who sleep soundly.</span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all transform hover:scale-105">
+                        🛡️ Get Instant Protection (£19.99) - Limited Time
+                    </button>
+                    <button class="border-2 border-purple-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-500 hover:bg-opacity-20 transition-all">
+                        See Protection Plans
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Trust Strip -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+                Join 5,000+ Professionals Who Sleep Soundly Knowing They're 100% Compliant:
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 hover-lift rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <i data-feather="briefcase" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Solicitors & Law Firms</h3>
+                    <p class="text-gray-400">"The SRA auditor said he'd never seen such complete records. We actually look forward to audits now." - Clifford Chance Partner</p>
+                </div>
+                <div class="text-center p-6 hover-lift rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <i data-feather="home" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Real Estate Agents</h3>
+                    <p class="text-gray-400">"Our competitors lose deals to compliance delays. <span class="text-yellow-400">We close 40% faster</span> with instant verification - time is money!" - Savills Director</p>
+                </div>
+                <div class="text-center p-6 hover-lift rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                        <i data-feather="calculator" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Accountants</h3>
+                    <p class="text-gray-400">"While others scramble during HMRC reviews, <span class="text-green-400">we're done in minutes</span>. It's actually competitive advantage - our clients notice the difference." - PwC Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Stakes Section -->
+    <section class="py-20 bg-gradient-to-br from-red-900 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-red-400" data-aos="fade-up">
+                    ⚠️ "We Didn't Know" Won't Save Your Licence When Regulators Come Knocking
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 my-12">
+                    <div class="bg-gray-800 p-6 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl font-bold text-red-400 mb-2">£25,000+</div>
+                        <p class="text-gray-300">Fines for AML breaches</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl font-bold text-red-400 mb-2">Licence</div>
+                        <p class="text-gray-300">Suspension for missing records</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl font-bold text-red-400 mb-2">Trust</div>
+                        <p class="text-gray-300">Destroyed reputation</p>
+                    </div>
+                </div>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up">
+                    <span class="text-yellow-400 font-bold">CRITICAL:</span> While competitors pray they don't get audited, our clients have 100% audit success rate. <span class="text-green-400">Every check logged. Every file stored. Every trail bulletproof.</span> Don't be the cautionary tale others learn from.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">From "Compliance Nightmare" to "Audit-Proof" in 90 Seconds:</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative mb-8">
+                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-5xl font-bold">1</span>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full pulse-slow"></div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Send Smart Link</h3>
+                    <p class="text-gray-400">Your client gets a secure link that works on any device. <span class="text-green-400">No app downloads. No confusion.</span> While competitors chase clients for weeks, yours verify in 90 seconds.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative mb-8">
+                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-5xl font-bold">2</span>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-green-400 rounded-full pulse-slow" style="animation-delay: 1s;"></div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">90-Second Verification</h3>
+                    <p class="text-gray-400">AI matches government ID to live selfie, confirms phone ownership, and checks 50+ global watchlists <span class="text-yellow-400">simultaneously</span> - something manual processes can't match.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative mb-8">
+                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-5xl font-bold">3</span>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-blue-400 rounded-full pulse-slow" style="animation-delay: 2s;"></div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Regulator-Ready Vault</h3>
+                    <p class="text-gray-400"><span class="text-red-400">Every click timestamped. Every document hashed. Every action recorded</span> in an immutable blockchain trail that satisfies the most aggressive regulator. Your competitors can't offer this level of protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">While Your Competitors Gamble, You Get:</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-800 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="shield" class="w-16 h-16 mx-auto mb-4 text-blue-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">Zero Gaps</h3>
+                    <p class="text-gray-400">"The SRA auditor said he'd never seen such complete records" - Magic Circle Partner</p>
+                </div>
+                <div class="text-center p-6 bg-gray-800 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="zap" class="w-16 h-16 mx-auto mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">Zero Hassle</h3>
+                    <p class="text-gray-400">"Clients actually thank us for making verification this simple" - Big Four Partner</p>
+                </div>
+                <div class="text-center p-6 bg-gray-800 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="check-circle" class="w-16 h-16 mx-auto mb-4 text-green-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">Zero Risk</h3>
+                    <p class="text-gray-400">"We invite regulatory reviews now. It's actually competitive advantage." - Top 10 Firm</p>
+                </div>
+                <div class="text-center p-6 bg-gray-800 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="moon" class="w-16 h-16 mx-auto mb-4 text-purple-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">Peace of Mind</h3>
+                    <p class="text-gray-400">Pass every compliance review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Choose Your Protection Level:</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg border-2 border-gray-700 hover-lift relative" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                    <div class="text-sm text-green-400 mb-2">Perfect for sole practitioners - upgrade anytime</div>
+                    <div class="text-4xl font-bold mb-2">£149<span class="text-lg text-gray-400">/m</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li>15 checks/month</li>
+                        <li>500 records stored</li>
+                        <li>5-year retention</li>
+                        <li>Instant reports</li>
+                        <li>Overage £19.99/check</li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+                        Start Protecting Now
+                    </button>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg border-2 border-purple-500 hover-lift relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-1 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Professional</h3>
+                    <div class="text-sm text-yellow-400 mb-2">🔥 MOST POPULAR - 78% of clients choose this</div>
+                    <div class="text-4xl font-bold mb-2">£399<span class="text-lg text-gray-400">/m</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li>40 checks/month</li>
+                        <li>2,500 records stored</li>
+                        <li>Audit-trail PDFs</li>
+                        <li>Downloadable reports</li>
+                        <li>Overage £14.99/check</li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+                        Get Started
+                    </button>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg border-2 border-gray-700 hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold mb-4">Firm</h3>
+                    <div class="text-sm text-purple-400 mb-2">For practices with 10+ partners - enterprise features included</div>
+                    <div class="text-4xl font-bold mb-2">£999<span class="text-lg text-gray-400">/m</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li>120 checks/month</li>
+                        <li>Unlimited records</li>
+                        <li>Priority support</li>
+                        <li>Advanced analytics</li>
+                        <li>Overage £9.99/check</li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+                        Get Started
+                    </button>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg border-2 border-gray-700 hover-lift" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-2">Custom</div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li>Unlimited checks</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated support</li>
+                        <li>SLA guarantees</li>
+                        <li>Custom pricing</li>
+                    </ul>
+                    <button class="w-full border-2 border-purple-500 py-3 rounded-lg font-semibold hover:bg-purple-500 hover:bg-opacity-20 transition-all">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+            <div class="mt-12 text-center" data-aos="fade-up">
+                <div class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-2">📊 AI Compliance Summaries</h4>
+                    <p class="mb-4">Weekly/monthly digest highlighting risks, regulator-ready</p>
+                    <div class="text-2xl font-bold">£99/m</div>
+                    <div class="text-sm text-yellow-200 mt-2">⚡ Save 5+ hours/week on compliance reporting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="compliance" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12" data-aos="fade-up">Built for Compliance Standards</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-800 p-8 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="award" class="w-16 h-16 mx-auto mb-4 text-blue-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">SRA / FCA / AML</h3>
+                    <p class="text-gray-400">Built for the strictest standards</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="lock" class="w-16 h-16 mx-auto mb-4 text-green-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">UK GDPR & AMLD5</h3>
+                    <p class="text-gray-400">Aligned record retention</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="users" class="w-16 h-16 mx-auto mb-4 text-purple-400"></i>
+                    <h3 class="text-xl font-semibold mb-2">Professionals</h3>
+                    <p class="text-gray-400">Who can't afford mistakes</p>
+                </div>
+            </div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up">
+                When the SRA/FCA asks for your compliance records, you'll smile. When they see our documentation, they'll ask for your implementation notes. That's how good we are.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Compliance isn't optional.
+            </h2>
+            <p class="text-xl mb-10 text-gray-200" data-aos="fade-up" data-aos-delay="100">
+                Don't risk your licence or your reputation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <button class="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all transform hover:scale-105">
+                    🛡️ Run a One-Off Check (£19.99) - Instant Protection
+                </button>
+                <button class="border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all">
+                    ⚡ Subscribe Now — Join 5,000+ Protected Professionals
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent mb-4">
+                        Legal KYC™
+                    </div>
+                    <p class="text-gray-400">The UK's #1 compliance platform protecting 5,000+ professionals with bulletproof audit trails.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2025 Legal KYC™. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            // Add mobile menu functionality here
+        });
+    </script>
+</body>
+</html>
