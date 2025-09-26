@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal KYC™ - Stop £25,000+ Fines Dead in Their Tracks</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #312e81 70%, #6366f1 100%);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transform: translateY(-4px);
+        }
+        
+        .price-card {
+            background: linear-gradient(to bottom right, #ffffff, #f1f5f9);
+            border-radius: 1.5rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+            background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+            border: 1px solid #c7d2fe;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.4);
+        }
+        
+        .cta-button::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .cta-button:hover::before {
+            opacity: 1;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.33);
+                opacity: 1;
+            }
+            80%, 100% {
+                opacity: 0;
+            }
+        }
+        
+        .price-card:hover .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .bg-gradient-to-br.from-purple-600.to-indigo-600 {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+        
+        .text-green-400 {
+            color: #10b981;
+        }
+        
+        .text-blue-400 {
+            color: #3b82f6;
+        }
+        
+        .text-purple-400 {
+            color: #8b5cf6;
+        }
+        
+        .text-red-500 {
+            color: #ef4444;
+        }
+        
+        .text-yellow-500 {
+            color: #f59e0b;
+        }
+        
+        .text-indigo-600 {
+            color: #6366f1;
+        }
+        
+        .text-teal-600 {
+            color: #0d9488;
+        }
+        
+        .text-pink-600 {
+            color: #ec4899;
+        }
+        
+        .text-orange-600 {
+            color: #f97316;
+        }
+        
+        .bg-blue-500 {
+            background-color: #6366f1;
+        }
+        
+        .bg-green-500 {
+            background-color: #10b981;
+        }
+        
+        .bg-purple-500 {
+            background-color: #8b5cf6;
+        }
+        
+        .bg-yellow-400 {
+            background-color: #fbbf24;
+        }
+        
+        .bg-red-500 {
+            background-color: #ef4444;
+        }
+        
+        .from-blue-50.to-blue-100 {
+            background: linear-gradient(to bottom right, #e0e7ff, #c7d2fe);
+        }
+        
+        .from-green-50.to-green-100 {
+            background: linear-gradient(to bottom right, #d1fae5, #a7f3d0);
+        }
+        
+        .from-purple-50.to-purple-100 {
+            background: linear-gradient(to bottom right, #ede9fe, #ddd6fe);
+        }
+        
+        .from-orange-50.to-orange-100 {
+            background: linear-gradient(to bottom right, #ffedd5, #fed7aa);
+        }
+        
+        .from-red-50.to-red-100 {
+            background: linear-gradient(to bottom right, #fee2e2, #fecaca);
+        }
+        
+        .from-teal-50.to-teal-100 {
+            background: linear-gradient(to bottom right, #ccfbf1, #99f6e4);
+        }
+        
+        .from-indigo-50.to-indigo-100 {
+            background: linear-gradient(to bottom right, #e0e7ff, #c7d2fe);
+        }
+        
+        .from-pink-50.to-pink-100 {
+            background: linear-gradient(to bottom right, #fce7f3, #fbcfe8);
+        }
+        
+        .border-red-500 {
+            border-color: #ef4444;
+        }
+        
+        .border-gray-200 {
+            border-color: #e2e8f0;
+        }
+        
+        .border-gray-800 {
+            border-color: #1e293b;
+        }
+        
+        .text-gray-50 {
+            color: #f8fafc;
+        }
+        
+        .text-gray-100 {
+            color: #f1f5f9;
+        }
+        
+        .text-gray-200 {
+            color: #e2e8f0;
+        }
+        
+        .text-gray-300 {
+            color: #cbd5e1;
+        }
+        
+        .text-gray-400 {
+            color: #94a3b8;
+        }
+        
+        .text-gray-500 {
+            color: #64748b;
+        }
+        
+        .text-gray-600 {
+            color: #475569;
+        }
+        
+        .text-gray-700 {
+            color: #334155;
+        }
+        
+        .text-gray-800 {
+            color: #1e293b;
+        }
+        
+        .text-gray-900 {
+            color: #0f172a;
+        }
+        
+        .bg-gray-50 {
+            background-color: #f8fafc;
+        }
+        
+        .bg-gray-100 {
+            background-color: #f1f5f9;
+        }
+        
+        .bg-gray-200 {
+            background-color: #e2e8f0;
+        }
+        
+        .bg-gray-300 {
+            background-color: #cbd5e1;
+        }
+        
+        .bg-gray-400 {
+            background-color: #94a3b8;
+        }
+        
+        .bg-gray-500 {
+            background-color: #64748b;
+        }
+        
+        .bg-gray-600 {
+            background-color: #475569;
+        }
+        
+        .bg-gray-700 {
+            background-color: #334155;
+        }
+        
+        .bg-gray-800 {
+            background-color: #1e293b;
+        }
+        
+        .bg-gray-900 {
+            background-color: #0f172a;
+        }
+        
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1), 0 2px 4px -1px rgba(99, 102, 241, 0.06);
+        }
+        
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.15), 0 4px 6px -2px rgba(99, 102, 241, 0.08);
+        }
+        
+        .shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.2), 0 10px 10px -5px rgba(99, 102, 241, 0.04);
+        }
+        
+        .hover\:shadow-lg:hover {
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.15), 0 4px 6px -2px rgba(99, 102, 241, 0.08);
+        }
+        
+        .hover\:shadow-xl:hover {
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.2), 0 10px 10px -5px rgba(99, 102, 241, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Legal KYC™</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#how-it-works" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">How It Works</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Pricing</a>
+                    <a href="#industries" class="text-gray-700 hover:text-gray-900 font-medium transition-colors">Industries</a>
+                    <button class="cta-button text-white px-6 py-2 rounded-lg font-semibold">Subscribe Now</button>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#how-it-works" class="block py-2 text-gray-700 hover:text-gray-900">How It Works</a>
+                <a href="#pricing" class="block py-2 text-gray-700 hover:text-gray-900">Pricing</a>
+                <a href="#industries" class="block py-2 text-gray-700 hover:text-gray-900">Industries</a>
+                <button class="w-full cta-button text-white px-6 py-2 rounded-lg font-semibold mt-4">Subscribe Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative overflow-hidden min-h-screen flex items-center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #312e81 70%, #6366f1 100%);">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-5xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                        Reduce AML Compliance Risk<br>
+                        <span class="text-indigo-300">with Secure Identity Verification</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Send a secure verification link to your clients. They complete biometric ID and phone verification in under a minute, while all evidence is stored in a tamper-proof audit trail that meets regulatory standards.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center">
+                            Fire a Single Check (£24.99)
+                            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                            Secure Unlimited Shield
+                        </button>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-300">£50M+</div>
+                            <div class="text-gray-300 text-sm">Fines Dodged</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-300">500+</div>
+                            <div class="text-gray-300 text-sm">Firms Protected</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-300">0</div>
+                            <div class="text-gray-300 text-sm">Licences Lost</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="glass-card rounded-2xl p-8 floating">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                                <i data-feather="shield" class="text-white w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-white font-semibold">Verification Complete</div>
+                                <div class="text-gray-400 text-sm">2.3 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center text-indigo-300">
+                                <i data-feather="check-circle" class="w-5 h-5 mr-3"></i>
+                                <span class="text-white">Government ID Verified</span>
+                            </div>
+                            <div class="flex items-center text-indigo-300">
+                                <i data-feather="check-circle" class="w-5 h-5 mr-3"></i>
+                                <span class="text-white">Facial Recognition Passed</span>
+                            </div>
+                            <div class="flex items-center text-indigo-300">
+                                <i data-feather="check-circle" class="w-5 h-5 mr-3"></i>
+                                <span class="text-white">Phone Number Confirmed</span>
+                            </div>
+                            <div class="flex items-center text-indigo-300">
+                                <i data-feather="check-circle" class="w-5 h-5 mr-3"></i>
+                                <span class="text-white">Immutable Vault Sealed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+                    Simple 3-Step Identity Verification<br>
+                    <span class="gradient-text">for Legal Compliance</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Streamline your client onboarding with secure, compliant identity checks
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <div class="absolute inset-0 w-20 h-20 bg-indigo-500 rounded-full opacity-20 pulse-ring"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Launch Secure Link</h3>
+                    <p class="text-gray-600">One tap from your Outlook to their iPhone—zero apps, zero passwords, zero IT headaches.</p>
+                    <p class="text-sm text-gray-500 mt-2 italic">Clients need zero instructions</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <div class="absolute inset-0 w-20 h-20 bg-indigo-500 rounded-full opacity-20 pulse-ring"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Client Cleared in 47 Seconds</h3>
+                    <p class="text-gray-600">AI facial liveness + passport chip read + silent phone ping—faster than queuing for espresso.</p>
+                    <p class="text-sm text-gray-500 mt-2 italic">98% nail it first attempt</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">3</span>
+                        </div>
+                        <div class="absolute inset-0 w-20 h-20 bg-indigo-500 rounded-full opacity-20 pulse-ring"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Sleep Like the Dead</h3>
+                    <p class="text-gray-600">Every shred of evidence immortalised in WORM storage that makes the most vicious SRA auditor cry uncle.</p>
+                    <p class="text-sm text-gray-500 mt-2 italic">Bank-grade, GDPR-bulletproof</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+                    Choose Your Compliance Plan<br>
+                    <span class="gradient-text">for Secure Identity Verification</span>
+                </h2>
+                <p class="text-xl text-gray-600">Flexible pricing for law firms of all sizes</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-4 gap-6">
+                <!-- Starter Shield -->
+                <div class="price-card bg-white rounded-2xl p-6 shadow-lg border border-indigo-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NEW START</h3>
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Starter Plan</h4>
+                        <div class="text-3xl font-bold gradient-text mb-2">£299/m</div>
+                        <p class="text-gray-600 text-sm">For small law firms</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            25 verified checks/month
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            1,000 audit-proof records stored
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Signed PDF + JSON per check
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Overage £19.99/check
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-100 text-indigo-700 py-3 rounded-lg font-semibold hover:bg-indigo-200 transition-colors">
+                        Lock In Protection →
+                    </button>
+                </div>
+                
+                <!-- Professional Armour -->
+                <div class="price-card bg-white rounded-2xl p-6 shadow-lg relative border border-indigo-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-indigo-400 text-white px-4 py-1 rounded-full text-sm font-bold">Best Value</span>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Plan</h3>
+                        <div class="text-3xl font-bold gradient-text mb-2">£599/m</div>
+                        <p class="text-gray-600 text-sm">For growing law firms</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            60 fortress-grade checks/month
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            5,000 tamper-proof records
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Bulk exports (PDF/CSV)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Overage £14.99/check
+                        </li>
+                    </ul>
+                    <button class="cta-button w-full text-white py-3 rounded-lg font-semibold">
+                        Secure My Firm
+                    </button>
+                </div>
+                
+                <!-- Firm Fortress -->
+                <div class="price-card bg-white rounded-2xl p-6 shadow-lg border border-indigo-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Firm Plan</h3>
+                        <div class="text-3xl font-bold gradient-text mb-2">£1,499/m</div>
+                        <p class="text-gray-600 text-sm">For high-volume practices</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            180 battle-tested checks/month
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Unlimited WORM records (immutable)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Priority compliance support & SLA
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            Overage £9.99/check
+                        </li>
+                    </ul>
+                    <button class="w-full bg-indigo-900 text-white py-3 rounded-lg font-semibold hover:bg-indigo-800 transition-colors">
+                        Build My Fortress
+                    </button>
+                </div>
+                
+                <!-- Enterprise Citadel -->
+                <div class="price-card bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 shadow-lg text-white" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2">Enterprise Citadel</h3>
+                        <div class="text-3xl font-bold mb-2">Contact us</div>
+                        <p class="text-purple-100 text-sm">Bespoke compliance fortress for industry titans</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-5 h-5 mr-3"></i>
+                            Custom checks/month
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-5 h-5 mr-3"></i>
+                            Unlimited records
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-5 h-5 mr-3"></i>
+                            Dedicated support & onboarding
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-5 h-5 mr-3"></i>
+                            Custom pricing
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Speak to a Citadel Architect
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Add-ons -->
+            <div class="mt-12 grid md:grid-cols-2 gap-6" data-aos="fade-up">
+                <div class="bg-white rounded-xl p-6 shadow-md border border-indigo-100">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">KYB Add-On (Corporate Checks)</h4>
+                    <p class="text-gray-600 mb-4">Unmask companies with live registry lookups, sanctions/PEP sweeps on directors, and audit-ready evidence packs.</p>
+                    <p class="text-2xl font-bold gradient-text">£49.99 per company check</p>
+                    <p class="text-gray-500 text-sm">or 10-pack for £399</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-indigo-100">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">AI Compliance Summaries</h4>
+                    <p class="text-gray-600 mb-4">Weekly heat-maps and red-flag radar that spot verification spikes before they explode.</p>
+                    <p class="text-2xl font-bold gradient-text">£199/m</p>
+                    <p class="text-gray-500 text-sm">costs less than 60 mins of trainee time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+                    Trusted Across Industries<br>
+                    <span class="gradient-text">for Compliance Identity Verification</span>
+                </h2>
+                <p class="text-xl text-gray-600">500+ organizations rely on our secure identity verification platform</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="briefcase" class="w-12 h-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Legal & Law Firms</h3>
+                    <p class="text-gray-600 text-sm">SRA-bulletproof KYC for solicitors</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="credit-card" class="w-12 h-12 text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Fintech & Payments</h3>
+                    <p class="text-gray-600 text-sm">FCA-tight identity verification</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="home" class="w-12 h-12 text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Real Estate & Mortgage</h3>
+                    <p class="text-gray-600 text-sm">AML armour for property deals</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="dollar-sign" class="w-12 h-12 text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cryptocurrency</h3>
+                    <p class="text-gray-600 text-sm">KYT and wallet unmasking</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="500">
+                    <i data-feather="shopping-cart" class="w-12 h-12 text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Marketplaces</h3>
+                    <p class="text-gray-600 text-sm">Seller & buyer vetting</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="600">
+                    <i data-feather="heart" class="w-12 h-12 text-teal-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Health</h3>
+                    <p class="text-gray-600 text-sm">Patient ID armour</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="700">
+                    <i data-feather="users" class="w-12 h-12 text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Public Sector</h3>
+                    <p class="text-gray-600 text-sm">Government-grade vetting</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="800">
+                    <i data-feather="book" class="w-12 h-12 text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Education</h3>
+                    <p class="text-gray-600 text-sm">Student & staff clearance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+                    Advanced Identity Verification<br>
+                    <span class="gradient-text">for Modern Compliance</span>
+                </h2>
+                <p class="text-xl text-gray-600">Comprehensive verification tools to meet regulatory requirements</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Government ID Verification</h3>
+                    <p class="text-gray-600 mb-4">Verify 4,000+ document types from 195 countries with advanced security feature detection including holograms, micro-prints, and NFC chip validation.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="user-check" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Selfie Liveness Detection</h3>
+                    <p class="text-gray-600 mb-4">Advanced deep-learning technology detects spoofing attempts including masks, deepfakes, and AI-generated faces to ensure the person is physically present.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="phone" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Phone Verification</h3>
+                    <p class="text-gray-600 mb-4">Verify phone ownership and carrier details with silent network pings that detect SIM-swap history without relying on vulnerable SMS codes.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-6" data-aos="fade-up">
+                <div class="flex items-start">
+                    <i data-feather="alert-triangle" class="w-6 h-6 text-indigo-500 mr-3 mt-1 flex-shrink-0"></i>
+                    <div>
+                        <h4 class="text-lg font-bold text-indigo-900 mb-2">⚠️ AML compliance requirements are increasing</h4>
+                        <p class="text-indigo-700">Ensure your firm meets regulatory standards with proper identity verification procedures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-gray-900 to-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-black text-white mb-6">
+                    Ensure your firm meets compliance requirements.
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Join 500+ organizations using secure identity verification.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center">
+                        Run a One-Off Check (£24.99)
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </button>
+                    <button class="border-2 border-indigo-300 text-indigo-300 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-300 hover:text-gray-900 transition-all">
+                        Subscribe Now
+                    </button>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-300 mb-2">60-Second Setup</div>
+                        <div class="text-gray-400">Zero IT agony, instant armour</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-300 mb-2">SRA-Kryptonite Vault</div>
+                        <div class="text-gray-400">Immutable evidence that silences regulators</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-300 mb-2">2025 Survival Kit</div>
+                        <div class="text-gray-400">Non-negotiable for any surviving practice</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-indigo-900 to-purple-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">Legal KYC™</h3>
+                    <p class="text-gray-400 text-sm">The bulletproof compliance fortress vaporising £25k+ SRA fines and career-killing audits before breakfast.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-indigo-800 pt-8 text-center text-indigo-300">
+                <p>&copy; 2025 Copyright Legal KYC™ All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to navigation
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const nav = document.querySelector('nav');
+            
+            if (currentScroll > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
